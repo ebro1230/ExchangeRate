@@ -12,10 +12,8 @@ export async function GET() {
     average = average / (exchangeRateTrendData.length - 1);
     if (exchangeRateTrendData.length >= 16) {
       if (
-        exchangeRateTrendData[exchangeRateTrendData.length - 1] <
-          exchangeRateTrendData[exchangeRateTrendData.length - 16] &&
-        exchangeRateTrendData[exchangeRateTrendData.length - 16] <
-          exchangeRateTrendData[exchangeRateTrendData.length - 8]
+        exchangeRateTrendData[exchangeRateTrendData.length - 1] <=
+        average - 0.005
       ) {
         return {
           trend: "negative",

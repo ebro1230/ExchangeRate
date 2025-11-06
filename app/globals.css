@@ -14,8 +14,11 @@
   justify-content: center;
   align-items: center;
   background: #e6e6e6;
+  padding: 2rem 0rem;
   border-radius: 25px;
-  box-shadow: 0 20px 25px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 25px rgba(53, 53, 53, 0.8), 
+  inset 0px -0px 25px rgba(48, 48, 48, 0.8)
+
 }
 .exchange-rate-title{
   color:black;
