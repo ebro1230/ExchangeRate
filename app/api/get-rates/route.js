@@ -24,7 +24,7 @@ export async function GET() {
 
     if (
       exchangeRateTrendData[exchangeRateTrendData.length - 1] >
-      average + 0.03
+      average + 0.01
     ) {
       return {
         trend: "positive",
